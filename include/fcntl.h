@@ -14,7 +14,8 @@
 #define O_ASYNC      020000
 #define O_DIRECT     040000
 #define O_NOATIME  01000000
-#elif ((defined CONFIG_ARCH_ARM_64) || (defined CONFIG_ARCH_ARM_32))
+#elif ((defined CONFIG_ARCH_ARM_64) || (defined CONFIG_ARCH_ARM_32) || \
+       (defined CONFIG_ARCH_RISCV_64))
 #undef O_NONBLOCK
 #define O_NONBLOCK    04000
 #define O_NOFOLLOW  0100000
