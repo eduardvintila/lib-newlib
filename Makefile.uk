@@ -164,6 +164,11 @@ LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/network/htonl.c
 LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/network/htons.c
 LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/network/ntohl.c
 LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/network/ntohs.c
+LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/time/__month_to_secs.c
+LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/time/__secs_to_tm.c
+LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/time/__tm_to_secs.c
+LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/time/__year_to_secs.c
+LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/musl-imported/src/time/timegm.c
 LIBNEWLIBGLUE_SRCS-y += $(LIBNEWLIBC_BASE)/__uk_init_tls.c
 
 ifeq ($(CONFIG_LIBNEWLIBC_CRYPT),y)
